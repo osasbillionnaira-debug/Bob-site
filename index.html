@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3DPCXMYVGX"></script> 
+    <script> 
+      window.dataLayer = window.dataLayer || []; 
+      function gtag(){dataLayer.push(arguments);} 
+      gtag('js', new Date()); 
+      gtag('config', 'G-3DPCXMYVGX'); 
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bob Kelvin | WR3D Mod Vault</title>
     <style>
-        body { background: #050a14; color: white; font-family: 'Arial', sans-serif; margin: 0; padding-bottom: 50px; }
+        body { background: #050a14; color: white; font-family: 'Arial', sans-serif; margin: 0; padding-bottom: 50px; scroll-behavior: smooth; }
         
         .header { 
             background: #1e3a5f;
@@ -20,7 +28,6 @@
 
         .container { padding: 15px; max-width: 600px; margin: auto; }
 
-        /* Search Bar */
         .search-container { margin: 20px 0; }
         #modSearch {
             width: 100%;
@@ -47,7 +54,9 @@
             border-radius: 12px; 
             margin-bottom: 20px; 
             padding: 15px;
+            transition: transform 0.2s;
         }
+        .mod-card:active { transform: scale(0.98); }
 
         .mod-name { font-size: 1.1rem; font-weight: bold; color: #fff; display: block; }
         .mod-desc { color: #b0c4de; font-size: 13px; margin: 8px 0; }
@@ -88,7 +97,11 @@
         <div class="mod-card searchable">
             <span class="mod-name">WR3D 2k26 DOPE V1 BY BOB KELVIN</span>
             <p class="mod-desc">The flagship mod. New rosters, belts, and 4K textures.</p>
-            <a href="https://bobkel.blogspot.com/2026/03/wr3d-2k26-dope-v1-by-bob-kelvin.html" class="dl-btn">Download Latest (MediaFire)</a>
+            <a href="https://bobkel.blogspot.com/2026/03/wr3d-2k26-dope-v1-by-bob-kelvin.html" 
+               class="dl-btn" 
+               onclick="gtag('event', 'download', {'method': 'MediaFire', 'content_id': 'DOPE_V1'});">
+               Download Latest (MediaFire)
+            </a>
         </div>
 
         <div id="legacy" class="section-title">Older Mods & Versions</div>
@@ -96,17 +109,18 @@
         <div class="mod-card old-mod searchable">
             <span class="mod-name">WR3D 2K26 BANGER</span>
             <p class="mod-desc"> 2k26 build for lower-end devices.</p>
-            <a href="https://tpi.li/Bangermod" class="dl-btn">Download BANGER</a>
+            <a href="https://tpi.li/Bangermod" 
+               class="dl-btn" 
+               onclick="gtag('event', 'download', {'method': 'TPI', 'content_id': 'BANGER_MOD'});">
+               Download BANGER
+            </a>
         </div>
 
         <div id="contact" class="section-title">External Links</div>
         <div class="mod-card" style="background: #000;">
             <a href="https://youtube.com/@bob445?si=56IYD-mOFAsng6lt" class="dl-btn" style="background:#ff0000; color:white;">YouTube Channel</a>
-            
             <a href="https://wa.me/2349133269825" class="dl-btn" style="background:#25D366; color:white;">WhatsApp Group</a>
-            
             <a href="https://www.blogger.com/blog/posts/7431585345890958659" class="dl-btn" style="background:#f57c00; color:white;">OTHER MODS (Blogger)</a>
-            
             <a href="https://www.facebook.com/profile.php?id=100077989938324" class="dl-btn" style="background:#1877f2; color:white;">Facebook Group</a>
         </div>
 
